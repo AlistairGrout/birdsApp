@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Mary Poppins Bag</string>
+    <string name="welcome_bird">Welcome to Birds Stories!</string>
+    <string name="btn_big">Big Birds</string>
+    <string name="btn_medium">Medium Birds</string>
+    <string name="btn_small">Small Birds</string>
+    <string name="choice_id">Pick a bird to read their story!</string>
+
+    <!-- BIG BIRDS NAMES -->
+    <string name="big_magical">Magical</string>
+    <string name="big_plague">Plague</string>
+    <string name="big_vermillion">Vermillion</string>
+
+    <!-- MEDIUM BIRDS NAMES -->
+    <string name="medium_angery">Angery</string>
+    <string name="medium_baptism">Baptism</string>
+    <string name="medium_crimewave">Crimewave</string>
+
+    <!-- SMALL BIRDS NAMES -->
+    <string name="small_deer">Deer</string>
+    <string name="small_doe">Doe</string>
+    <string name="small_krappa">Krappa</string>
+
+
+    <!-- OTHER BUTTONS -->
+    <string name="btn_magical">I wonder what this button does...</string>
+    <string name="btn_image">How about a surprise?</string>
+
+    <!-- ALERT DIALOG -->
+    <string name="ad_title">Wow!</string>
+    <string name="ad_text">This button does absolutely nothing.</string>
+    <string name="ad_cancel">Great!</string>
+    <string name="ad_confirm">And what now?</string>
+    <string name="txt_about">This is useless and I like it</string>
+    <string name="toast_positive_press">I know right?!</string>
+    <string name="toast_negative_press">Carry on kiddo!</string>
+    <string name="txt_about_tf">What are you gonna do about it?</string>
+    <string name="heart_clicked">You clicked some pixels, nice!</string>
+
+
+</resources>

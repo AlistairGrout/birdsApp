@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emakina.iclu.generalapp.activities.SmallBirdActivity">
+
+    <TextView
+        android:id="@+id/choice_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/TitleTheme"
+        android:text="@string/choice_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp" />
+
+    <Button
+        android:id="@+id/btn_deer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/small_deer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/choice_msg" />
+
+    <Button
+        android:id="@+id/btn_doe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/small_doe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_deer" />
+
+    <Button
+        android:id="@+id/btn_krappa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/small_krappa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_doe" />
+
+    <Button
+        android:id="@+id/btn_image_shit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_image"
+        android:theme="@style/ButtonTheme"
+        app:layout_constraintTop_toBottomOf="@id/btn_krappa"
+        android:layout_marginTop="120dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
