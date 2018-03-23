@@ -36,6 +36,11 @@
     <string name="toast_negative_press">Carry on kiddo!</string>
     <string name="txt_about_tf">What are you gonna do about it?</string>
     <string name="heart_clicked">You clicked some pixels, nice!</string>
+    <string name="snack_string">Oh no!</string>
+    <string name="snack_yes">u wot</string>
+
+    <!-- BIRD STORY -->
+    <string name="bird_text">I still don\'t know how to put my stuff here so have a picture of a bird dabbing</string>
 
 
 </resources>

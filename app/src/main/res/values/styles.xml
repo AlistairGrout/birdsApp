@@ -22,5 +22,10 @@
         <item name="android:textSize">15dp</item>
     </style>
 
+    <style name="TextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/quito_chicken_regular</item>
+    </style>
 
 </resources>

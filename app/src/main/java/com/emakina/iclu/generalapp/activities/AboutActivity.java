@@ -3,6 +3,7 @@ package com.emakina.iclu.generalapp.activities;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,6 +29,9 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
 
         FadeAnimation animator = new FadeAnimation(introText, catImage);
         animator.startAnimation();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     @Override
@@ -41,7 +45,8 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         int id = item.getItemId();
 
         if (id == R.id.action_woaw) {
-            Toast.makeText(AboutActivity.this, R.string.heart_clicked, Toast.LENGTH_SHORT).show();
+            snackbarStart();
+            //Toast.makeText(AboutActivity.this, R.string.heart_clicked, Toast.LENGTH_SHORT).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -81,6 +86,18 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         AnimatorSet set = new AnimatorSet();
         set.playTogether(rotationAnimator, translateAnimator);
         set.start();
+    }
+
+    private void snackbarStart() {
+        Snackbar snackbar = Snackbar
+                .make(findViewById(R.id.coordinatorLayout), R.string.heart_clicked, Snackbar.LENGTH_SHORT);
+        snackbar.setAction(R.string.snack_string, new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(AboutActivity.this, R.string.snack_yes, Toast.LENGTH_SHORT).show();
+            }
+        });
+        snackbar.show();
     }
 
 }
